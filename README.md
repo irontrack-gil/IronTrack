@@ -1,9 +1,5 @@
 # IronTrack
 
-Phone-focused workout, nutrition and progress tracker.
+GitHub Pages-ready IronTrack PWA.
 
-## GitHub Pages
-
-Upload the contents of this folder to the **root** of the `main` branch and configure GitHub Pages to deploy from `main` / `/(root)`.
-
-The entry file is `index.html`.
+V6 includes the new IronTrack barbell app icon in iPhone/PWA sizes and the iPhone header/progress fixes from V5.

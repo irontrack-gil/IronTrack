@@ -1,4 +1,4 @@
-const CACHE = 'irontrack-v5';
+const CACHE = 'irontrack-v6';
 const ASSETS = [
   './',
   './index.html',
