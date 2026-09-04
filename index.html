@@ -15,6 +15,36 @@
 :root{--bg:#070707;--card:#111;--line:#242424;--muted:#777;--text:#f4f4f4;--blue:#1597ff;--red:#ff3b3b;--purple:#b84cff;--orange:#ff9f0a;--green:#32c759}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);overflow-x:hidden;color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif}.app{width:100%;max-width:900px;margin:auto;padding:20px 14px 50px}.top{display:flex;justify-content:space-between;align-items:center}.brand{font-size:30px;font-weight:800;letter-spacing:-1px}.sub{color:#777;letter-spacing:2px;margin-top:4px;font-size:13px}.btn{background:#090909;color:#aaa;border:1px solid #333;border-radius:14px;padding:11px 15px;font-size:14px}.days{display:flex;gap:9px;overflow:auto;padding:28px 0 16px}.day{min-width:86px;padding:13px 15px;border-radius:28px;background:#090909;border:1px solid #292929;color:#888;font-weight:700}.day.active{color:#fff;border-color:transparent}.hero{border:1px solid var(--line);border-radius:20px;background:#111;padding:22px 20px;margin:5px 0 22px;border-left:5px solid var(--accent)}.eyebrow{color:var(--accent);font-weight:800;letter-spacing:4px;font-size:12px}.hero h1{font-size:25px;margin:10px 0}.hero p{color:#777;line-height:1.5;margin:0}.bar{height:5px;background:#292929;border-radius:5px;margin-top:20px}.bar i{display:block;height:100%;background:var(--accent);border-radius:5px;width:0}.section{margin:25px 0}.section h2{color:var(--accent);font-size:14px;letter-spacing:5px;border-bottom:1px solid #292929;padding-bottom:12px}.exercise{background:#111;border:1px solid #292929;border-radius:18px;padding:17px 16px;margin:12px 0}.exhead{display:flex;justify-content:space-between;gap:10px}.name{font-size:18px;font-weight:750}.scheme{background:#21130d;color:var(--accent);border-radius:12px;padding:9px 12px;font-weight:800;white-space:nowrap}.note{color:#666;margin:10px 0 14px;font-size:14px}.rest{float:right;color:#666;font-weight:700;font-size:12px}.weight{display:flex;align-items:center;gap:8px;border-top:1px solid #292929;padding-top:14px}.weight span{color:#555;letter-spacing:4px;font-size:12px;font-weight:800}.weight input{flex:1;width:100%;background:#171717;border:2px solid #303030;color:#fff;border-radius:15px;padding:13px;text-align:center;font-size:25px;font-weight:800;min-width:0}.weight b{color:#777}.sets{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin-top:10px}.sets input{width:100%;background:#171717;border:1px solid #2d2d2d;color:#fff;border-radius:9px;padding:9px;text-align:center;min-width:0}.save{width:100%;margin-top:10px;background:var(--accent);color:#fff;border:0;border-radius:12px;padding:12px;font-weight:800}.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.stat{background:#111;border:1px solid #292929;border-radius:16px;padding:15px}.stat small{color:#777}.stat strong{display:block;font-size:24px;margin-top:5px}.nav{position:sticky;top:0;z-index:5;background:rgba(7,7,7,.96);padding:10px 0;display:flex;gap:10px;backdrop-filter:blur(8px)}.nav button{flex:1;min-width:0;background:#111;color:#888;border:1px solid #292929;padding:12px 8px;border-radius:14px;font-size:15px}.nav button.active{background:#147ee8;color:#fff;border-color:#147ee8;box-shadow:0 0 0 2px #eee}.panel{display:none;min-width:0}.panel.active{display:block}.foodrow{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin:8px 0}.foodrow label,.field{display:flex;flex-direction:column;gap:8px;min-width:0}.field{width:100%}.foodrow input,.field input{width:100%;background:#171717;border:1px solid #333;color:#fff;border-radius:10px;padding:12px 14px;font-size:17px;min-width:0}.check{display:flex;gap:12px;padding:14px 0;border-bottom:1px solid #222;color:#aaa}.check input{width:20px;height:20px}.message{color:#888;line-height:1.5}.danger{color:#ff6969}@media(max-width:700px){.app{padding:14px 10px 40px}.brand{font-size:27px}.day{min-width:72px}.exhead{align-items:flex-start}.scheme{font-size:12px;padding:8px}.name{font-size:17px}.stats{grid-template-columns:1fr 1fr}.hero h1{font-size:22px}.foodrow{grid-template-columns:1fr}.weight{gap:6px}.weight span{font-size:10px;letter-spacing:2px}.weight input{font-size:22px}.sets{grid-template-columns:repeat(2,minmax(0,1fr))}}
 
+
+/* NUTRITION TRACKER */
+.nutri-summary{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin:12px 0}
+.nutri-stat{background:#111;border:1px solid #292929;border-radius:14px;padding:12px 8px;text-align:center}
+.nutri-stat small{display:block;color:#777;font-size:11px}.nutri-stat strong{display:block;font-size:19px;margin-top:4px}
+.progressbar{height:7px;background:#242424;border-radius:8px;overflow:hidden;margin-top:8px}.progressbar i{display:block;height:100%;width:0;background:#1597ff;border-radius:8px;transition:width .2s}
+.remaining{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin:10px 0}
+.remaining div{background:#0d0d0d;border:1px solid #252525;border-radius:12px;padding:9px;text-align:center;color:#888;font-size:11px}
+.remaining b{display:block;color:#f4f4f4;font-size:15px;margin-top:3px}
+.meal-tabs{display:flex;gap:7px;overflow:auto;padding-bottom:4px;scrollbar-width:none}.meal-tabs::-webkit-scrollbar{display:none}
+.meal-tab{flex:0 0 auto;background:#111;color:#888;border:1px solid #292929;border-radius:20px;padding:9px 12px;font-size:12px}.meal-tab.active{background:#1597ff;color:#fff;border-color:#1597ff}
+.food-entry{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:12px 0;border-bottom:1px solid #222}
+.food-entry:last-child{border-bottom:0}.food-name{font-weight:700}.food-meta{color:#777;font-size:11px;margin-top:3px}.food-actions{display:flex;gap:5px}.mini{background:#171717;color:#aaa;border:1px solid #333;border-radius:8px;padding:7px 9px;font-size:11px}
+.quick-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.quick{background:#171717;color:#ddd;border:1px solid #303030;border-radius:11px;padding:11px;text-align:left}.quick small{display:block;color:#777;margin-top:3px}
+.nutri-note{font-size:12px;color:#777;line-height:1.45}
+@media(max-width:600px){.nutri-summary{grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}.remaining{grid-template-columns:repeat(2,minmax(0,1fr))}.food-entry{align-items:flex-start}.food-actions{flex:0 0 auto}.quick-grid{grid-template-columns:1fr 1fr}}
+
+
+/* SAVED MEALS + PLAN MY DAY */
+.plan-card{background:linear-gradient(145deg,#111,#0c0c0c);border:1px solid #303030;border-radius:18px;padding:16px;margin:12px 0}
+.plan-card h3{margin:0 0 7px}.plan-card p{margin:0;color:#888;font-size:12px;line-height:1.45}
+.plan-actions{display:flex;gap:8px;margin-top:12px}.plan-actions button{flex:1}
+.saved-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.saved-card{background:#171717;border:1px solid #303030;border-radius:13px;padding:12px}
+.saved-card h4{margin:0 0 5px;font-size:14px}.saved-card small{color:#777;display:block;line-height:1.45}
+.saved-card .food-actions{margin-top:9px}.saved-card .mini{flex:1}
+.plan-result{border-top:1px solid #292929;margin-top:14px;padding-top:14px}.plan-meal{display:flex;justify-content:space-between;gap:10px;padding:9px 0;border-bottom:1px solid #222}.plan-meal:last-child{border-bottom:0}.plan-meal b{font-size:13px}.plan-meal span{color:#777;font-size:11px;text-align:right}
+.plan-total{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-top:10px}.plan-total div{background:#171717;border-radius:9px;padding:8px 4px;text-align:center;font-size:10px;color:#777}.plan-total strong{display:block;color:#fff;font-size:13px;margin-top:2px}
+@media(max-width:600px){.saved-grid{grid-template-columns:1fr}.plan-total{grid-template-columns:repeat(2,1fr)}.plan-actions{flex-direction:column}}
+
 /* MOBILE / PHONE LAYOUT */
 html{background:var(--bg);-webkit-text-size-adjust:100%;text-size-adjust:100%;}body{min-height:100vh;min-height:100dvh;}button,input{font:inherit}button{touch-action:manipulation;-webkit-tap-highlight-color:transparent}.app{padding-top:max(28px,env(safe-area-inset-top));padding-bottom:calc(50px + env(safe-area-inset-bottom));}
 @media(max-width:600px){
@@ -60,13 +90,98 @@ html{background:var(--bg);-webkit-text-size-adjust:100%;text-size-adjust:100%;}b
 </section>
 
 <section id="nutrition" class="panel">
-<div class="hero" style="--accent:#1597ff"><div class="eyebrow">NUTRITION</div><h1 id="targetCal">2700 kcal target</h1><p>Starting target for slow fat loss while supporting gym + BJJ. We'll adjust this from your real weight trend.</p></div>
-<div class="stats"><div class="stat"><small>Protein</small><strong>185g</strong></div><div class="stat"><small>Carbs</small><strong>290g</strong></div><div class="stat"><small>Fat</small><strong>75g</strong></div></div>
-<div class="exercise"><h3>Today's intake</h3>
-<div class="foodrow"><label>Calories<input id="cal" type="number" value="0"></label><label>Protein (g)<input id="pro" type="number" value="0"></label></div>
-<div class="foodrow"><label>Carbs (g)<input id="carb" type="number" value="0"></label><label>Fat (g)<input id="fat" type="number" value="0"></label></div>
-<button class="save" style="--accent:#1597ff" onclick="saveNutrition()">SAVE INTAKE</button><p id="nutritionMsg" class="message"></p></div>
-<div class="exercise"><h3>Simple meal timing</h3><p class="message">6:15 AM — light pre-workout<br>8:30 AM — large post-workout breakfast<br>12:30 PM — lunch<br>3:30 PM — snack<br>Before BJJ — easy carbs + protein<br>Dinner — protein + carbs + vegetables</p></div>
+<div class="hero" style="--accent:#1597ff">
+  <div class="eyebrow">NUTRITION</div>
+  <h1 id="targetCal">2700 kcal target</h1>
+  <p>Log what you actually eat. IronTrack adds each meal together so you can see what is left for the day.</p>
+</div>
+
+<div class="nutri-summary">
+  <div class="nutri-stat"><small>Calories</small><strong id="nCal">0 / 2700</strong><div class="progressbar"><i id="pCal"></i></div></div>
+  <div class="nutri-stat"><small>Protein</small><strong id="nPro">0 / 185g</strong><div class="progressbar"><i id="pPro"></i></div></div>
+  <div class="nutri-stat"><small>Carbs</small><strong id="nCarb">0 / 290g</strong><div class="progressbar"><i id="pCarb"></i></div></div>
+  <div class="nutri-stat"><small>Fat</small><strong id="nFat">0 / 75g</strong><div class="progressbar"><i id="pFat"></i></div></div>
+</div>
+
+<div class="exercise">
+  <h3 style="margin-top:0">Left today</h3>
+  <div class="remaining">
+    <div>Calories<b id="rCal">2700 kcal</b></div>
+    <div>Protein<b id="rPro">185 g</b></div>
+    <div>Carbs<b id="rCarb">290 g</b></div>
+    <div>Fat<b id="rFat">75 g</b></div>
+  </div>
+  <p class="nutri-note">If a number goes negative, that's okay — it simply means you've passed that target. Look at the whole day rather than trying to make every meal perfect.</p>
+</div>
+
+<div class="exercise">
+  <h3 style="margin-top:0">Add food</h3>
+  <div class="foodrow">
+    <label>Food / meal name<input id="foodName" type="text" placeholder="e.g. Chicken rice bowl"></label>
+    <label>Meal
+      <select id="foodMeal" style="width:100%;background:#171717;border:1px solid #333;color:#fff;border-radius:10px;padding:12px 14px;font-size:17px">
+        <option>Breakfast</option><option>Lunch</option><option>Dinner</option><option>Snack</option><option>Pre-workout</option>
+      </select>
+    </label>
+  </div>
+  <div class="foodrow">
+    <label>Calories<input id="foodCal" type="number" min="0" inputmode="numeric" placeholder="e.g. 650"></label>
+    <label>Protein (g)<input id="foodPro" type="number" min="0" step=".1" inputmode="decimal" placeholder="e.g. 45"></label>
+  </div>
+  <div class="foodrow">
+    <label>Carbs (g)<input id="foodCarb" type="number" min="0" step=".1" inputmode="decimal" placeholder="e.g. 70"></label>
+    <label>Fat (g)<input id="foodFat" type="number" min="0" step=".1" inputmode="decimal" placeholder="e.g. 18"></label>
+  </div>
+  <div class="plan-actions">
+    <button class="save" style="--accent:#1597ff" onclick="addFood()">ADD TO TODAY</button>
+    <button class="save" style="--accent:#1597ff;background:#171717;border:1px solid #1597ff" onclick="saveFormAsMeal()">SAVE AS MEAL</button>
+  </div>
+  <p id="foodMsg" class="message"></p>
+</div>
+
+<div class="exercise">
+  <h3 style="margin-top:0">Quick add</h3>
+  <div class="quick-grid">
+    <button class="quick" onclick="quickFood('Whey shake','Snack',220,30,10,5)">Whey shake<small>220 kcal · 30P</small></button>
+    <button class="quick" onclick="quickFood('Banana','Snack',105,1,27,0)">Banana<small>105 kcal · 27C</small></button>
+    <button class="quick" onclick="quickFood('2 eggs + toast','Breakfast',320,19,28,15)">2 eggs + toast<small>320 kcal · 19P</small></button>
+    <button class="quick" onclick="quickFood('Greek yoghurt','Snack',150,15,12,4)">Greek yoghurt<small>150 kcal · 15P</small></button>
+  </div>
+  <p class="nutri-note">Quick-add values are estimates. For packaged foods, use the nutrition panel on the product for the most accurate entry.</p>
+</div>
+
+<div class="exercise">
+  <h3 style="margin-top:0">Today's meals</h3>
+  <div class="meal-tabs">
+    <button class="meal-tab active" onclick="filterMeals('All',this)">All</button>
+    <button class="meal-tab" onclick="filterMeals('Breakfast',this)">Breakfast</button>
+    <button class="meal-tab" onclick="filterMeals('Lunch',this)">Lunch</button>
+    <button class="meal-tab" onclick="filterMeals('Dinner',this)">Dinner</button>
+    <button class="meal-tab" onclick="filterMeals('Snack',this)">Snacks</button>
+    <button class="meal-tab" onclick="filterMeals('Pre-workout',this)">Pre-workout</button>
+  </div>
+  <div id="mealList"></div>
+  <p id="mealEmpty" class="message">Nothing logged yet. Add your first meal above.</p>
+</div>
+
+<div class="exercise">
+  <h3 style="margin-top:0">Plan My Day</h3>
+  <p class="nutri-note">IronTrack will use your saved meals and what you have already logged to build a simple plan close to your remaining calories and protein.</p>
+  <button class="save" style="--accent:#1597ff" onclick="planMyDay()">BUILD MY DAY</button>
+  <div id="planResult"></div>
+</div>
+
+<div class="exercise">
+  <h3 style="margin-top:0">Saved meals</h3>
+  <p class="nutri-note">Save meals you eat regularly once, then add the whole meal with one tap.</p>
+  <div id="savedMeals" class="saved-grid"></div>
+  <p id="savedEmpty" class="message">No saved meals yet. Fill in the Add food form above and tap “SAVE AS MEAL”.</p>
+</div>
+
+<div class="exercise">
+  <h3 style="margin-top:0">Simple meal timing</h3>
+  <p class="message">6:15 AM — light pre-workout<br>8:30 AM — large post-workout breakfast<br>12:30 PM — lunch<br>3:30 PM — snack<br>Before BJJ — easy carbs + protein<br>Dinner — protein + carbs + vegetables</p>
+</div>
 </section>
 
 <section id="progress" class="panel">
@@ -117,11 +232,74 @@ function workoutHTML(day){const d=data[day];if(!d||!d.sections.length)return `<d
 function saveExercise(id){store.exercises=store.exercises||{};store.exercises[id]=document.getElementById(id).value;store.sets=store.sets||{};store.sets[key()]=store.sets[key()]||{};const box=document.getElementById(id).closest('.exercise');store.sets[key()][id]=[...box.querySelectorAll('.sets input')].map(x=>x.value);store.history=store.history||{};store.history[key()]=store.history[key()]||{};store.history[key()][id]={weight:store.exercises[id],sets:store.sets[key()][id]};save();alert('Session saved ✓')}
 function tab(id,btn){document.querySelectorAll('.panel').forEach(x=>x.classList.remove('active'));document.getElementById(id).classList.add('active');document.querySelectorAll('.nav button').forEach(x=>x.classList.remove('active'));btn.classList.add('active');if(id==='workouts')document.getElementById('workoutContent').innerHTML=workoutHTML(currentDay())}
 function renderChecks(){document.querySelectorAll('[data-check]').forEach(x=>{x.checked=!!store.checks?.[key()]?.[x.dataset.check];x.onchange=()=>{store.checks=store.checks||{};store.checks[key()]=store.checks[key()]||{};store.checks[key()][x.dataset.check]=x.checked;save()}})}
-function saveNutrition(){store.nutrition=store.nutrition||{};store.nutrition[key()]={cal:+cal.value,pro:+pro.value,carb:+carb.value,fat:+fat.value};save();nutritionMsg.textContent='Saved for today ✓'}
+const N_TARGET={cal:2700,pro:185,carb:290,fat:75};
+let mealFilter='All';
+function todayMeals(){store.meals=store.meals||{};store.meals[key()]=store.meals[key()]||[];return store.meals[key()]}
+function savedMeals(){store.savedMeals=store.savedMeals||[];return store.savedMeals}
+function readFoodForm(){return {name:(document.getElementById('foodName').value||'').trim(),meal:document.getElementById('foodMeal').value,cal:+document.getElementById('foodCal').value||0,pro:+document.getElementById('foodPro').value||0,carb:+document.getElementById('foodCarb').value||0,fat:+document.getElementById('foodFat').value||0}}
+function addFood(name,meal,calv,prov,carbv,fatv){
+  const f=arguments.length?{name:(name??'').trim(),meal:meal??'Snack',cal:+calv||0,pro:+prov||0,carb:+carbv||0,fat:+fatv||0}:readFoodForm();
+  if(!f.name||!f.cal){document.getElementById('foodMsg').textContent='Add a food name and calories first.';return}
+  todayMeals().push({id:Date.now()+Math.random(),...f});
+  save(); clearFoodForm(); document.getElementById('foodMsg').textContent='Added ✓'; renderNutrition();
+}
+function quickFood(name,meal,calv,prov,carbv,fatv){addFood(name,meal,calv,prov,carbv,fatv)}
+function clearFoodForm(){['foodName','foodCal','foodPro','foodCarb','foodFat'].forEach(id=>document.getElementById(id).value='')}
+function saveFormAsMeal(){
+  const f=readFoodForm();
+  if(!f.name||!f.cal){document.getElementById('foodMsg').textContent='Add a meal name and calories before saving it.';return}
+  savedMeals().push({id:Date.now()+Math.random(),...f});save();clearFoodForm();document.getElementById('foodMsg').textContent='Saved meal ✓';renderSavedMeals();
+}
+function addSavedMeal(id){
+  const s=savedMeals().find(x=>x.id===id);if(!s)return;
+  todayMeals().push({id:Date.now()+Math.random(),name:s.name,meal:s.meal,cal:s.cal,pro:s.pro,carb:s.carb,fat:s.fat,savedId:s.id});
+  save();renderNutrition();
+}
+function deleteSavedMeal(id){savedMeals().splice(savedMeals().findIndex(x=>x.id===id),1);save();renderSavedMeals();document.getElementById('planResult').innerHTML=''}
+function deleteFood(id){store.meals[key()]=todayMeals().filter(x=>x.id!==id);save();renderNutrition()}
+function filterMeals(filter,btn){mealFilter=filter;document.querySelectorAll('.meal-tab').forEach(x=>x.classList.remove('active'));btn.classList.add('active');renderMealList()}
+function renderMealList(){
+  const list=document.getElementById('mealList'),empty=document.getElementById('mealEmpty');
+  const meals=todayMeals().filter(x=>mealFilter==='All'||x.meal===mealFilter);
+  list.innerHTML=meals.map(x=>`<div class="food-entry"><div><div class="food-name">${escapeHTML(x.name)}</div><div class="food-meta">${escapeHTML(x.meal)} · ${x.cal} kcal · ${x.pro}P · ${x.carb}C · ${x.fat}F</div></div><div class="food-actions"><button class="mini" onclick="deleteFood(${x.id})">Delete</button></div></div>`).join('');
+  empty.style.display=meals.length?'none':'block';
+}
+function renderSavedMeals(){
+  const list=document.getElementById('savedMeals'),empty=document.getElementById('savedEmpty'); if(!list)return;
+  const meals=savedMeals();
+  list.innerHTML=meals.map(x=>`<div class="saved-card"><h4>${escapeHTML(x.name)}</h4><small>${escapeHTML(x.meal)}<br>${x.cal} kcal · ${x.pro}P · ${x.carb}C · ${x.fat}F</small><div class="food-actions"><button class="mini" onclick="addSavedMeal(${x.id})">+ Add</button><button class="mini danger" onclick="deleteSavedMeal(${x.id})">Delete</button></div></div>`).join('');
+  empty.style.display=meals.length?'none':'block';
+}
+function totals(meals){return meals.reduce((a,x)=>({cal:a.cal+x.cal,pro:a.pro+x.pro,carb:a.carb+x.carb,fat:a.fat+x.fat}),{cal:0,pro:0,carb:0,fat:0})}
+function renderNutrition(){
+  const t=totals(todayMeals());
+  const set=(id,v,target,suffix='')=>document.getElementById(id).textContent=`${Math.round(v*10)/10}${suffix} / ${target}${suffix}`;
+  set('nCal',t.cal,N_TARGET.cal);set('nPro',t.pro,N_TARGET.pro,'g');set('nCarb',t.carb,N_TARGET.carb,'g');set('nFat',t.fat,N_TARGET.fat,'g');
+  ['Cal','Pro','Carb','Fat'].forEach(k=>{const k2=k==='Cal'?'cal':k==='Pro'?'pro':k==='Carb'?'carb':'fat';document.getElementById('p'+k).style.width=Math.min(100,t[k2]/N_TARGET[k2]*100)+'%'});
+  document.getElementById('rCal').textContent=Math.round((N_TARGET.cal-t.cal)*10)/10+' kcal';document.getElementById('rPro').textContent=Math.round((N_TARGET.pro-t.pro)*10)/10+' g';document.getElementById('rCarb').textContent=Math.round((N_TARGET.carb-t.carb)*10)/10+' g';document.getElementById('rFat').textContent=Math.round((N_TARGET.fat-t.fat)*10)/10+' g';
+  renderMealList();renderSavedMeals();
+}
+function escapeHTML(s){return String(s).replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]))}
+function planMyDay(){
+  const result=document.getElementById('planResult');const saved=savedMeals();
+  if(!saved.length){result.innerHTML='<div class="plan-result"><p class="message">Save a few regular meals first — for example breakfast, lunch, dinner and a high-protein snack — then IronTrack can build your day from them.</p></div>';return}
+  const remaining=totals([{cal:N_TARGET.cal,pro:N_TARGET.pro,carb:N_TARGET.carb,fat:N_TARGET.fat}]);
+  const eaten=totals(todayMeals());const target={cal:Math.max(0,N_TARGET.cal-eaten.cal),pro:Math.max(0,N_TARGET.pro-eaten.pro),carb:Math.max(0,N_TARGET.carb-eaten.carb),fat:Math.max(0,N_TARGET.fat-eaten.fat)};
+  // Search 1–3 saved meals, allowing repeats, and score mainly on calories + protein.
+  let best=null;
+  function score(combo){const t=totals(combo);const calErr=Math.abs(t.cal-target.cal)/Math.max(1,target.cal);const proErr=Math.abs(t.pro-target.pro)/Math.max(1,target.pro);const carbErr=Math.abs(t.carb-target.carb)/Math.max(1,target.carb);const fatErr=Math.abs(t.fat-target.fat)/Math.max(1,target.fat);return calErr*0.50+proErr*0.30+carbErr*0.12+fatErr*0.08+Math.max(0,t.pro-target.pro)*0.0005}
+  const max=Math.min(3, saved.length<3?saved.length:3);
+  function walk(combo,start){if(combo.length){const sc=score(combo);if(!best||sc<best.score)best={combo:[...combo],score:sc}}if(combo.length===max)return;for(let i=start;i<saved.length;i++)walk([...combo,saved[i]],i)}
+  walk([],0);
+  if(!best){result.innerHTML='<div class="plan-result"><p class="message">I could not build a plan from the saved meals.</p></div>';return}
+  const pt=totals(best.combo),left={cal:Math.max(0,target.cal-pt.cal),pro:Math.max(0,target.pro-pt.pro),carb:Math.max(0,target.carb-pt.carb),fat:Math.max(0,target.fat-pt.fat)};
+  result.innerHTML=`<div class="plan-result"><div class="plan-meal"><b>What’s left</b><span>${Math.round(target.cal)} kcal · ${Math.round(target.pro)}P</span></div>${best.combo.map(x=>`<div class="plan-meal"><b>${escapeHTML(x.name)}</b><span>${x.cal} kcal · ${x.pro}P</span></div>`).join('')}<div class="plan-total"><div>Plan kcal<strong>${Math.round(pt.cal)}</strong></div><div>Plan protein<strong>${Math.round(pt.pro)}g</strong></div><div>Still kcal<strong>${Math.round(left.cal)}</strong></div><div>Still protein<strong>${Math.round(left.pro)}g</strong></div></div><p class="nutri-note" style="margin-top:10px">This is a practical estimate, not a perfect prescription. Use the plan as a starting point and adjust portions based on your actual food labels and appetite.</p><button class="save" style="--accent:#1597ff" onclick="usePlan(${best.combo.map(x=>x.id).join(',')})">ADD THIS PLAN TO TODAY</button></div>`;
+}
+function usePlan(){for(const id of arguments)addSavedMeal(id);document.getElementById('planResult').innerHTML='<div class="plan-result"><p class="message">Plan added to today ✓</p></div>'}
 function saveProgress(){store.weights=store.weights||[];store.weights.push({date:key(),weight:+weight.value,waist:+waist.value||null,bf:+bf.value||null});save();renderTrend()}
 function renderTrend(){const a=(store.weights||[]).slice(-7);if(a.length<2){trend.textContent='Add at least two weigh-ins to calculate a trend.';return}const first=a[0].weight,last=a[a.length-1].weight;const change=(last-first).toFixed(2);trend.textContent=`Last ${a.length} check-ins: ${first} → ${last} kg (${change>0?'+':''}${change} kg). We will use the longer-term trend before changing calories.`}
 function clearData(){if(confirm('Clear all IronTrack data on this device?')){localStorage.removeItem('irontrack_v4');localStorage.removeItem('irontrack_v3');localStorage.removeItem('irontrack_v2');location.reload()}}
-renderDays();showDay(currentDay());renderTrend();renderChecks();
+renderDays();showDay(currentDay());renderTrend();renderChecks();renderNutrition();
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
     navigator.serviceWorker.register('./sw.js').catch(() => {});
