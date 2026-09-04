@@ -1,0 +1,10 @@
+{
+  "name": "IronTrack",
+  "short_name": "IronTrack",
+  "start_url": "./IronTrack_v4.html",
+  "display": "standalone",
+  "background_color": "#070707",
+  "theme_color": "#070707",
+  "description": "Gym, BJJ, nutrition and progress tracker.",
+  "icons": []
+}
