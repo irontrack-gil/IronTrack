@@ -1,14 +1,14 @@
-# IronTrack
+# IronTrack v13
 
 Personal workout, nutrition, progress and daily-goal tracker.
 
-## v12
+## v13
+- Expanded Today dashboard with priorities and consistency streak.
+- Weekly summary for goals, workouts and food logging.
+- Weight trend metrics and compact history chart.
+- Personal-record view based on saved workout sessions.
+- 30-day activity calendar with day details.
+- Keeps localStorage data across app updates.
+- Service worker bumped to v13 for reliable PWA updates.
 
-- New Today dashboard on Home.
-- At-a-glance goals, workout progress, calories and protein.
-- Quick navigation from the dashboard to Workout and Nutrition.
-- Daily status indicator based on today’s tracked activity.
-- Keeps existing localStorage data when updating.
-- Service-worker cache bumped to v12 for reliable PWA updates.
-
-For GitHub Pages, keep the app files at the repository root, including `index.html`.
+For GitHub Pages, keep `index.html`, `sw.js`, `manifest.webmanifest`, `.nojekyll` and the icons at the repository root.
