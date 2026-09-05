@@ -2,12 +2,13 @@
 
 Personal workout, nutrition, progress and daily-goal tracker.
 
-## v11
-- Improved PWA/service-worker update handling.
-- Checks for a newer service worker on app load.
-- Uses `updateViaCache: "none"` for faster update detection.
-- New service workers activate immediately with `skipWaiting()` and `clients.claim()`.
-- Navigations prefer the newest network version, with offline cache fallback.
-- Existing IronTrack data in localStorage is preserved during updates.
+## v12
 
-For GitHub Pages, keep these files at the repository root, including `index.html`.
+- New Today dashboard on Home.
+- At-a-glance goals, workout progress, calories and protein.
+- Quick navigation from the dashboard to Workout and Nutrition.
+- Daily status indicator based on today’s tracked activity.
+- Keeps existing localStorage data when updating.
+- Service-worker cache bumped to v12 for reliable PWA updates.
+
+For GitHub Pages, keep the app files at the repository root, including `index.html`.

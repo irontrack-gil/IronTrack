@@ -1,4 +1,4 @@
-const CACHE = 'irontrack-v11';
+const CACHE = 'irontrack-v12';
 const APP_SHELL = [
   './',
   './index.html',
