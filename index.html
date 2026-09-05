@@ -322,8 +322,23 @@ function renderTrend(){const a=(store.weights||[]).slice(-7);if(a.length<2){tren
 function clearData(){if(confirm('Clear all IronTrack data on this device?')){localStorage.removeItem('irontrack_v4');localStorage.removeItem('irontrack_v3');localStorage.removeItem('irontrack_v2');location.reload()}}
 renderDays();showDay(currentDay());renderTrend();renderChecks();renderNutrition();
 if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => {
-    navigator.serviceWorker.register('./sw.js').catch(() => {});
+  window.addEventListener('load', async () => {
+    try {
+      const hadController = !!navigator.serviceWorker.controller;
+      const registration = await navigator.serviceWorker.register('./sw.js', { updateViaCache: 'none' });
+      await registration.update();
+
+      // When a newer worker takes control, reload once so the new app shell
+      // is immediately visible. localStorage data is left untouched.
+      if (hadController) {
+        let reloading = false;
+        navigator.serviceWorker.addEventListener('controllerchange', () => {
+          if (reloading) return;
+          reloading = true;
+          window.location.reload();
+        });
+      }
+    } catch (_) {}
   });
 }
 </script>
